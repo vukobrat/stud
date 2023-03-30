@@ -8,14 +8,14 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 var gallery = document.querySelector('.image-list');
-var images = ['images/house1.jpg', 'images/house2.jpg', 'images/house3.jpg'];
+var images = ['images/house3.jpg', 'images/house2.jpg', 'images/house4.jpg'];
 var currentIndex = 0;
 
 new fullpage('#fullpage', {
   scrollingSpeed: 70
 });
 
-var images = document.querySelectorAll(".image-container img");
+var images = document.querySelectorAll(".image-container a");
 
 
 function loadImages() { 
