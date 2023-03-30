@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
   new fullpage('#fullpage', {
       sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+      scrollingSpeed: 7000,
       anchors: ['home', 'about', 'rent', 'gallery', 'contact'],
       navigation: true,
       navigationTooltips: ['Почетна', 'О нама', 'Смештај', 'Галерија', 'Контакт']
@@ -10,10 +11,6 @@ document.addEventListener('DOMContentLoaded', function() {
 var gallery = document.querySelector('.image-list');
 var images = ['images/house3.jpg', 'images/house2.jpg', 'images/house4.jpg'];
 var currentIndex = 0;
-
-new fullpage('#fullpage', {
-  scrollingSpeed: 70
-});
 
 var images = document.querySelectorAll(".image-container a");
 
